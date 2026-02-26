@@ -42,7 +42,7 @@ CREATE TABLE Odsiadka (
     Planowana_data_zakonczenia DATE NOT NULL,
     Data_zakonczenia DATE NOT NULL,
     Osoby_ID INT NOT NULL CHECK (Osoby_ID >= 0),
-    Numer_celi INT CHECK (Numer_celi >= 1),
+    Numer_celi INT NOT NULL CHECK (Numer_celi >= 1),
     CHECK (Planowana_data_zakonczenia > Data_rozpoczecia),
     CHECK (Data_zakonczenia > Data_rozpoczecia),
     FOREIGN KEY (Osoby_ID) REFERENCES Wiezniowie(Osoby_ID),
