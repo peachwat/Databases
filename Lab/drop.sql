@@ -1,0 +1,19 @@
+USE PrisonSystem;
+DROP VIEW IF EXISTS WidokWiezniow;
+
+DROP TABLE IF EXISTS Przestepstwa_w_wiezieniu;
+DROP TABLE IF EXISTS Przestepstwa;
+DROP TABLE IF EXISTS Kary;
+DROP TABLE IF EXISTS Odwiedziny;
+DROP TABLE IF EXISTS Odsiadka;
+
+
+DROP TABLE IF EXISTS Typy_kar;
+DROP TABLE IF EXISTS Rodzaje_przestepstw;
+DROP TABLE IF EXISTS Wiezniowie;
+DROP TABLE IF EXISTS Straznicy;
+DROP TABLE IF EXISTS Odwiedzajacy;
+DROP TABLE IF EXISTS Cele;
+
+
+DROP TABLE IF EXISTS Osoby;
